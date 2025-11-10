@@ -10,19 +10,19 @@
 
 <div style="display:flex;gap:1rem;align-items:flex-start;">
     <figure style="margin:0;width:24%">
-        <img src="figures/USTC_Report-01_Page1.png" alt="封面" style="width:100%;height:auto"/>
+        <img src="figures/USTC_Report-01_Page1.png" alt="封面" style="height:auto"/>
         <figcaption style="text-align:center;font-size:0.9em">封面</figcaption>
     </figure>
     <figure style="margin:0;width:24%">
-        <img src="figures/USTC_Report-01_Page2.png" alt="目录" style="width:100%;height:auto"/>
+        <img src="figures/USTC_Report-01_Page2.png" alt="目录" style="height:auto"/>
         <figcaption style="text-align:center;font-size:0.9em">目录</figcaption>
     </figure>
     <figure style="margin:0;width:24%">
-        <img src="figures/USTC_Report-01_Page3.png" alt="内容" style="width:100%;height:auto"/>
+        <img src="figures/USTC_Report-01_Page3.png" alt="内容" style="height:auto"/>
         <figcaption style="text-align:center;font-size:0.9em">内容</figcaption>
     </figure>
     <figure style="margin:0;width:24%">
-        <img src="figures/USTC_Report-01_Page4.png" alt="内容" style="width:100%;height:auto"/>
+        <img src="figures/USTC_Report-01_Page4.png" alt="内容" style="height:auto"/>
         <figcaption style="text-align:center;font-size:0.9em">内容</figcaption>
     </figure>
 </div>
