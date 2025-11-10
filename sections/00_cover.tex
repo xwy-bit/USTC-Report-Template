@@ -1,0 +1,29 @@
+\begin{titlepage}
+	\thispagestyle{empty} % No header nor footer
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[inner sep=0pt] at (4.5,-13.5)
+		{\includegraphics[width=25cm]{cover}};
+	\end{tikzpicture} % Load the cover
+	\hfill 
+	%	Title
+	\begin{minipage}{8cm}
+		\vspace{5cm} 
+		\begin{flushright}
+			\begin{spacing}{3}
+				{\fontsize{40}{50}\selectfont \title}.
+			\end{spacing}
+		\end{flushright}
+	\end{minipage}
+	\vfill 
+	\hfill
+	% Subtitle, author and date
+	\begin{minipage}{10cm}
+		\begin{flushright}	
+			\begin{spacing}{2}
+				{\Large \bfseries  \COVERSUBTITLE} \\ [0.5cm]
+				{\Large \author} \\
+				{\Large \date}
+			\end{spacing}
+		\end{flushright}
+	\end{minipage}
+\end{titlepage}

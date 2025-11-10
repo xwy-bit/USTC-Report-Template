@@ -1,0 +1,23 @@
+% A Simple Report Template for USTC 
+% author Weiye Xu
+% Refer from template "Simple report" written by Mihdí Caballero
+% Basic configuration for TeX
+\documentclass[a4paper]{article}
+
+% Load all package
+\input{settings/packages}
+
+\begin{document}
+    % Load initial settings
+    \input{settings/initial}
+    
+    \input{sections/00_cover}
+    \newpage
+    \tableofcontents
+    \newpage
+    
+    % Sections
+    \input{sections/01}
+    \input{sections/02}
+    \input{sections/03}
+\end{document}

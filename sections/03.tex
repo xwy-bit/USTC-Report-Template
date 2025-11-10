@@ -1,0 +1,45 @@
+\section{数据表示：表格}
+\label{sec:tables}
+表格是整理和展示结构化数据的常用工具。我们使用 \texttt{booktabs} 宏包来创建更专业的横线（\texttt{\string\toprule}, \texttt{\string\midrule}, \texttt{\string\bottomrule}）。
+
+\begin{table}[h]
+    \centering
+    \caption{随机生成的数据集摘要}
+    \label{tab:summary}
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{参数} & \textbf{值 A} & \textbf{值 B} & \textbf{差异} \\
+        \midrule
+        样本量 $(N)$ & 120 & 150 & -30 \\
+        平均值 $(\mu)$ & 45.7 & 48.1 & 2.4 \\
+        标准差 $(\sigma)$ & 5.2 & 4.9 & -0.3 \\
+        \bottomrule
+    \end{tabular}
+    \vspace{0.5em} % 增加一些垂直空间
+    \footnotesize 注：差异计算为 值 B - 值 A。
+\end{table}
+从表 \ref{tab:summary} 可以看出，尽管样本量不同，值 B 的平均值略高于值 A。
+
+\section{进阶数学环境}
+\label{sec:advanced-math}
+本节展示矩阵和分段函数。
+
+\subsection{矩阵示例}
+一个 $3 \times 3$ 的系数矩阵 $A$ 可以使用 \texttt{pmatrix} 环境来表示（带小括号）：
+$$A = \begin{pmatrix}
+    a_{11} & a_{12} & a_{13} \\
+    a_{21} & a_{22} & a_{23} \\
+    a_{31} & a_{32} & a_{33}
+\end{pmatrix}$$
+我们也可以使用 \texttt{bmatrix} 环境（带中括号）来表示一个向量 $v$:
+$$v = \begin{bmatrix} 1 \\ 0 \\ -1 \end{bmatrix}$$
+
+\subsection{分段函数}
+分段函数 $f(x)$ 使用 \texttt{cases} 环境来定义：
+$$f(x) =
+\begin{cases}
+    x^2 + 1, & \text{如果 } x < 0 \\
+    5, & \text{如果 } x = 0 \\
+    \frac{1}{x}, & \text{如果 } x > 0
+\end{cases}$$
+
