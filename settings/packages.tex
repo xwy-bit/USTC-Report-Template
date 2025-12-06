@@ -6,7 +6,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage[useregional]{datetime2}
-
+\usepackage{ifthen}
 % *** CODE ***
 \usepackage{minted}
 
@@ -32,6 +32,7 @@
 
 % *** HEADING AND FOOTER ***
 \usepackage{fancyhdr} % For heading and footers
+\usepackage{xstring} % 导言区
 \renewcommand{\headrulewidth}{0.5pt}
 \let\oldheadrule\headrule% Copy \headrule into \oldheadrule
 \renewcommand{\headrule}{\color{blue}\oldheadrule}% Add colour to \headrule

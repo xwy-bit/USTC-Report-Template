@@ -1,8 +1,14 @@
 % initial settings
+\newcommand{\Area}{East}  %East 东区封面；West 西区封面
+\makeatletter
+\newif\if@west
+\IfStrEq{\Area}{West}{\@westtrue}{\@westfalse}
+\makeatother
+
 \renewcommand{\title}{中国科大报告模板}
-\renewcommand{\author}{Xu Weiye}
+\newcommand{\COVERSUBTITLE}{子标题}
+\renewcommand{\author}{XXX}
 \renewcommand{\date}{\DTMdate{2025-11-10}}
-\renewcommand{\COVERSUBTITLE}{子标题}
 
 % Definition of ToC title and figures and tables caption
 \renewcommand{\contentsname}{Content}

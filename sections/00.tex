@@ -1,0 +1,73 @@
+\makeatletter
+\if@west
+
+\begin{titlepage}
+	\thispagestyle{empty} % No header nor footer
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[inner sep=0pt] at (4.5,-13.5)
+		{\includegraphics[width=25cm]{cover}};
+	\end{tikzpicture} % Load the cover
+	\hfill 
+	%	Title
+	\begin{minipage}{8cm}
+		\vspace{5cm} 
+		\begin{flushright}
+			\begin{spacing}{3}
+				{\fontsize{40}{50}\selectfont \title}.
+			\end{spacing}
+		\end{flushright}
+	\end{minipage}
+	\vfill 
+	\hfill
+	% Subtitle, author and date
+	\begin{minipage}{10cm}
+		\begin{flushright}	
+			\begin{spacing}{2}
+				{\Large \bfseries  \COVERSUBTITLE} \\ [0.5cm]
+				{\Large \author} \\
+				{\Large \date}
+			\end{spacing}
+		\end{flushright}
+	\end{minipage}
+\end{titlepage}
+
+\else
+
+\begin{titlepage}
+	\thispagestyle{empty} % No header nor footer
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[inner sep=0pt] at (7.2,-14.5)
+		{\includegraphics[width=20.5cm]{east}};
+	\end{tikzpicture} % Load the cover
+	%	Title
+    
+    \begin{center}
+    \begin{minipage}{15cm}
+        \vspace{3cm} 
+        \begin{center}
+        {\hspace{-5cm}\color{blue}\rule{1.1\linewidth}{1pt}}
+        \vspace{0.8cm}
+            \begin{spacing}{3}
+                {\fontsize{40}{50}\selectfont \title}
+            \end{spacing}
+    {\hspace*{1.5cm}\vspace{-0.5cm}\color{blue}\rule{1.1\linewidth}{1pt}}
+    \vspace{0.8cm}
+        \end{center}
+    \end{minipage}
+    \end{center}
+    
+	\vfill 
+	\hfill
+	% Subtitle, author and date
+	\begin{minipage}{10cm}
+		\begin{flushright}	
+			\begin{spacing}{2}
+				{\Large \bfseries  \COVERSUBTITLE} \\ [0.5cm]
+				{\Large \author} \\
+				{\Large \date}
+			\end{spacing}
+		\end{flushright}
+	\end{minipage}
+\end{titlepage}
+\fi
+\makeatother
