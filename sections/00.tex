@@ -30,9 +30,43 @@
 		\end{flushright}
 	\end{minipage}
 \end{titlepage}
+\fi
 
-\else
+\if@hightech
 
+\begin{titlepage}
+	\thispagestyle{empty} % No header nor footer
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[inner sep=0pt] at (4.5,-15.5)
+		{\includegraphics[width=34cm]{figures/High-tech.jpg}};
+	\end{tikzpicture} % Load the cover
+	\hfill 
+	%	Title
+	\begin{minipage}{8cm}
+		\vspace{2cm} 
+		\begin{flushright}
+			\begin{spacing}{3}
+				{\fontsize{40}{50}\selectfont \title}.
+			\end{spacing}
+		\end{flushright}
+	\end{minipage}
+	\vfill 
+	\hfill
+	% Subtitle, author and date
+    \vspace{10cm}
+	\begin{minipage}{10cm }
+		\begin{flushright}	
+			\begin{spacing}{2}
+				{\Large \bfseries  \COVERSUBTITLE} \\ [0.5cm]
+				{\Large \author} \\
+				{\Large \date}
+			\end{spacing}
+		\end{flushright}
+	\end{minipage}
+\end{titlepage}
+
+\fi
+\if@east
 \begin{titlepage}
 	\thispagestyle{empty} % No header nor footer
 	\begin{tikzpicture}[remember picture,overlay]

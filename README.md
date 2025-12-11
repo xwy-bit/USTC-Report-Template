@@ -16,6 +16,10 @@
 |:--:|:--:|:--:|:--:|
 |封面|目录|内容 (第一页)|内容 (第二页)|
 
+高新区封面样式：
+|![](figures/USTC_Report-01_Page1.2.png)|![](figures/USTC_Report-01_Page2.png)|![](figures/USTC_Report-01_Page3.png)|![](figures/USTC_Report-01_Page4.png)|
+|:--:|:--:|:--:|:--:|
+
 
 ## 使用方法
 
@@ -36,9 +40,9 @@ Overleaf 在线使用：
 修改封面样式：
 
 在 `settings/initial.tex` 文件中修改以下信息：
-可供选择有 East（东区封面）和 West（西区封面）两种样式：
+可供选择有 East（东区封面）、 West（西区封面）和 hightech（高新区封面）三种样式：
 ```tex
-\newcommand{\Area}{East}  %填写 East 或 West 切换封面样式
+\newcommand{\Area}{hightech}  % East 东区；West 西区；hightech 高新区
 ```
 
 修改配置信息：

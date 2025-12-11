@@ -1,9 +1,24 @@
 % initial settings
-\newcommand{\Area}{East}  %East 东区封面；West 西区封面
+\newcommand{\Area}{hightech}  % East 东区；West 西区；hightech 高新区
+
 \makeatletter
 \newif\if@west
-\IfStrEq{\Area}{West}{\@westtrue}{\@westfalse}
+\newif\if@east
+\newif\if@hightech
+
+% 全部先置 false
+\@westfalse
+\@eastfalse
+\@hightechfalse
+
+% 根据字符串设置具体 flag
+\IfStrEq{\Area}{West}{\@westtrue}{
+  \IfStrEq{\Area}{East}{\@easttrue}{
+    \IfStrEq{\Area}{hightech}{\@hightechtrue}{}
+  }
+}
 \makeatother
+
 
 \renewcommand{\title}{中国科大报告模板}
 \newcommand{\COVERSUBTITLE}{子标题}
